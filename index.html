@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.css">
+  <link rel="stylesheet" href="animation.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="header">
+		<nav class="main-nav">
+			<ul>
+				<li data-menuanchor="firstSection">
+					<a href="#firstSection">Section 1</a>
+				</li>
+				<li data-menuanchor="secondSection">
+					<a href="#secondSection">Section 2</a>
+				</li>
+				<li data-menuanchor="thirdSection">
+					<a href="#thirdSection">Section 3</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+
+	<div id="fullpage">
+		<div class="section section-one">
+			<h2>Section 1</h2>
+			<p>This is paragraph nr.1 in Section 1</p>
+			<p>This is paragraph nr.2 in Section 1</p>
+			<p>This is paragraph nr.3 in Section 1</p>
+		</div>
+		<div class="section section-two">
+			<div class="slide slide-one">
+				<h2>Section 2 / Slide 1</h2>
+				<p>This is paragraph nr.1 in Section 2 / Slide 1</p>
+				<p>This is paragraph nr.2 in Section 2 / Slide 1</p>
+			</div>
+			<div class="slide slide-two">
+				<h2>Section 2 / Slide 2</h2>
+				<p>This is paragraph nr.1 in Section 2 / Slide 2</p>
+				<p>This is paragraph nr.2 in Section 2 / Slide 2</p>
+			</div>
+			<div class="slide slide-three">
+				<h2>Section 2 / Slide 3</h2>
+				<p>This is paragraph nr.1 in Section 2 / Slide 3</p>
+				<p>This is paragraph nr.2 in Section 2 / Slide 3</p>
+			</div>
+			<div class="slide slide-four">
+				<h2>Section 2 / Slide 4</h2>
+				<p>This is paragraph nr.1 in Section 2 / Slide 4</p>
+				<p>This is paragraph nr.2 in Section 2 / Slide 4</p>
+			</div>
+		</div>
+		<div class="section section-three">
+			<h2>Section 3</h2>
+			<p>This is paragraph nr.1 in Section 3</p>
+			<p>This is paragraph nr.2 in Section 3</p>
+		</div>
+	</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#fullpage').fullpage({
+    		sectionsColor: ['#0F2980', '#ffd200', '#c1c1c1'],
+    		anchors:['firstSection', 'secondSection', 'thirdSection'],
+    		menu: '.main-nav ul',
+    	});
+    });
+</script>
+</body>
+</html>
